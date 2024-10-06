@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Bubble Pop Delight</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  
+  <div id = "gamecontainer">
+
+    
+    
+  </div> 
+  
+ 
+  <div id = "buttons">
+    <table>
+      <tr>
+        <td rowspan = "2"><img src = "pause.png" width = 69 height = 69 id = "pauseeee"></td>
+        <td rowspan = "2"><form id = "spawnspeed" onsubmit="return false">
+          <label for="spawnspeed" id = "spawntitle">Spawn Speed:</label><br>
+          <input type="text" id="spawnspeeds" name="spawnspeed" value = "100"><br>
+        </form></td>
+        <td><b id = "titlep">Total Pops:<l id = "totalp">0</l></b></td>
+      </tr>
+      <tr><td><b id = "titlesp">Pops This Session: <l id = "sessionp">0</l></b></td></tr>
+    </table>
+  </div>
+   <div id = "restarts">
+    <img src = "restart.png" width = 95 height = 95 id = "restart">
+  </div>
+  
+
+  <audio id = "music">
+      <source src="music.ogg" type="audio/ogg">
+      <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <audio id = "gold">
+      <source src="gold.ogg" type="audio/ogg">
+      <source src="gold.mp3" type="audio/mpeg">
+  </audio>
+  <audio id = "bomb">
+      <source src="bomb.ogg" type="audio/ogg">
+      <source src="bomb.mp3" type="audio/mpeg">
+  </audio>
+    <audio id = "p1">
+      <source src="pop1.ogg" type="audio/ogg">
+      <source src="pop1.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+    <audio id = "p2">
+      <source src="pop2.ogg" type="audio/ogg">
+      <source src="pop2.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+   
+  </audio>
+    <audio id = "p4">
+      <source src="pop4.ogg" type="audio/ogg">
+      <source src="pop4.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+    <audio id = "p5">
+      <source src="pop5.ogg" type="audio/ogg">
+      <source src="pop5.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+    <audio id = "p6">
+      <source src="pop6.ogg" type="audio/ogg">
+      <source src="pop6.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+    <audio id = "p7">
+      <source src="pop7.ogg" type="audio/ogg">
+      <source src="pop7.mp3" type="audio/mpeg">
+  </audio>
+  </audio>
+    
+  <div id = "confirmation">
+    <b>Confirmation for Resetting ALL STATS?</b>
+    <br>
+    <table id = "yesnomaybeso">
+      <tr>
+        <td><button id = "yes" onclick = "reset()">yes</button></td>
+        <td><button id = "no" onclick = "cclose()">no</button></td>
+      </tr>
+    </table>
+  </div>
+ <div id = "player"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
